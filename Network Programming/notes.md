@@ -48,6 +48,8 @@ CAN - Campus Area Network (Town level or sum) the range is just like uni wifi or
 
 You see the pattern? Lowk this shi not that important just slap any letter in front of Area Network and you get like a visual into how big of a network you're talkin about like I could say like some absolute random bullcrap like IAN Island Area Network and the only reason people will notice is cuz they'll think i'm releasing the files
 
+Oh yeah btw irl as the area gets larger it gets slower and more expensive with the sole exception of satoru gojo
+
 
 
 
