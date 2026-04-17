@@ -28,6 +28,8 @@ Ok so you know that one meme where some guy on a short is spinning like a wheel 
 
 ![Screenshot-2026-04-17-at-12.02.41-PM.png](images/Screenshot-2026-04-17-at-12.02.41-PM.png)
 
+😭 Anyhow LAN is like the "building level". it's just referring to the fact that the computers are all wired up in the same building or the same house or something. So like we used to open to lan in the minecraft screenshot cuz we just wanna connect to the bros that r in ur house playing wit u and not to random strangers. so like if you try to open a server that's available to a bro thats across the country you probably noticed how it's kinda different
+
 
 
 
