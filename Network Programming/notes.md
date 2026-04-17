@@ -12,3 +12,24 @@ Network programming is pretty cool imo. this is actually getting pretty valuable
 
 ## What even is a network
 
+Ok so lets talk about networks first, and then power levels.
+basically a network is multiple computers that are capable of talking to each other. connections are either with wires and cables and shi or wireless with radio signals that mess with your nervous system
+
+Ok so now power levels. So obviously you prolly heard of "LAN"
+![Screenshot-2026-04-17-at-11.59.11-AM.png](images/Screenshot-2026-04-17-at-11.59.11-AM.p
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
