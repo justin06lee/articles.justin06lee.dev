@@ -52,16 +52,35 @@ You see the pattern? Lowk this shi not that important just slap any letter in fr
 Oh yeah btw irl as the area gets larger it gets slower and more expensive with the sole exception of satoru gojo of course
 
 ---
+## Client  server models and other models
 
 Aight so now let's talk about the client-server model and the p2p model
 
-You probably already know what the client server model is basically all the heavy stuff runs on like the NVIDIA 9000 GPUs somewhere else while your computer just connects to it to feeds on that shi like a parasite
+You probably already know what the client server model is basically all the heavy stuff runs on like the NVIDIA 9000000 GPUs somewhere else while your computer just connects to it to feeds on that shi like a parasite
+
+basically the user's computer that does less heavy processing and shi is the client and what it's connecting to to get info is the server that does more heavy stuff
 
 oh yeah something interesting like chat gpt isn't running on ur computer cuz if it did ur computer would explode so like ur basically just sending ur prompts to chat gpt servers and then they run the model for you, adn then they give u the result for it. Anyhow that basically means all ur doing is sending all ur prompts to chat gpt servers 😳 they know who you are
 
 Bro 😭 I remember one dude in high school we looked at this guy's chat gpt history and one of the things were like "how to focus on becoming sigma and ignore pretty girls" or sum shi we was dying 😭😭😭 generational aura debt
 
+anyway yeah like all the games nowadays are kinda that unless it's single player most of the syncing between u and other players is done on better computers somewhere else
 
+Ok lets talk about p2p this does not stand for pay to play it stands for "peer to peer". This is lowk interesting but let's actually first talk about the "listen server model" cuz it's more intuitive
+
+You know how it lethal company or amogus you create a game and then people join? Like you prolly seen like hosting a game or something like you create the game and then ur in there by urself u give gng a code or something they put it in and they join ur game. That's the listen-server model, where basically YOU ARE the server like you become the server and then ur computer actually does all the hard stuff of like syncing and allat that's just a listen server model
+
+ok so back to the p2p model imagine like instead of ur computer becoming the server, EVERYONE's computer is both the server AND the client so like you're sharing resources which means one guy's computer doesn't have to explode cuz we can contain the explosion to like many different computers and everyone can have a good time
+
+like imagine minecraft but like your computer is the server for like 100 chunks only and then ur bros computer is the server for a different 100 chunks and so on so like then ur computer only has to do heavy work for 100 chunks instead of a bajillion and it only does heavier work if someone steps in ur territory
+
+that's what p2p model is
+
+we'll learn the details of ts later just understand the idea behind it
+
+---
+
+## Circuit switching vs packet switching
 
 
 
