@@ -74,6 +74,8 @@ ok so back to the p2p model imagine like instead of ur computer becoming the ser
 
 like imagine minecraft but like your computer is the server for like 100 chunks only and then ur bros computer is the server for a different 100 chunks and so on so like then ur computer only has to do heavy work for 100 chunks instead of a bajillion and it only does heavier work if someone steps in ur territory
 
+that actually has a name its called distributed virtual worlds or like distributed game hosting there's lowk a bunch of problems tho like what happens if i'm standing like on the edge like between ur chunk and ur friends chunk who does the processing and like what happens and also like if u log off and no one does the processing for ur territory and no one can grief ur base which ig is pretty decent but like what if u get like a wife or sum and she js tryna take a look at ur house but ur offline unless someone saved ur chunks or something it's gonna be hard
+
 that's what p2p model is
 
 we'll learn the details of ts later just understand the idea behind it
