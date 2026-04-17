@@ -57,7 +57,11 @@ Aight so now let's talk about the client-server model and the p2p model
 
 You probably already know what the client server model is basically all the heavy stuff runs on like the NVIDIA 9000 GPUs somewhere else while your computer just connects to it to feeds on that shi like a parasite
 
-oh yeah something interesting like chat gpt isn't running on ur computer cuz if it did ur computer would explode so like ur basically just sending ur prompts to chat gpt servers and then they run the model for you, adn then they give u the result for it. Anyhow 
+oh yeah something interesting like chat gpt isn't running on ur computer cuz if it did ur computer would explode so like ur basically just sending ur prompts to chat gpt servers and then they run the model for you, adn then they give u the result for it. Anyhow that basically means all ur doing is sending all ur prompts to chat gpt servers 😳 they know who you are
+
+Bro 😭 I remember one dude in high school we looked at this guy's chat gpt history and one of the things were like "how to focus on becoming sigma and ignore pretty girls" or sum shi we was dying 😭😭😭 generational aura debt
+
+
 
 
 
