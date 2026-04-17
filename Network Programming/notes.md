@@ -30,6 +30,23 @@ Ok so you know that one meme where some guy on a short is spinning like a wheel 
 
 😭 Anyhow LAN is like the "building level". it's just referring to the fact that the computers are all wired up in the same building or the same house or something. So like we used to open to lan in the minecraft screenshot cuz we just wanna connect to the bros that r in ur house playing wit u and not to random strangers. so like if you try to open a server that's available to a bro thats across the country you probably noticed how it's kinda different
 
+I lied actually. When you connect to minecraft LAN to play with the in house hb's you're probably actually using "WLAN", which stands for "Wireless Local Area Network" cuz you're probably not literally connecting your computers with wires it's prolly js using radio waves
+
+but yeah that's what LAN is. The reason you gotta know that is cuz there's like a bunch of other ones like look at this bullcrap
+
+PAN - Personal Area Network (Human level in the wheel). Like bluetooth to ur airpods an shi
+
+LAN - we covered ts
+WLAN - we covered ts
+
+MAN - Metropolitan Area Network (City level). like imagine they give out free public wifi to like a whole city instead of just starbucks or mcdonalds or sum shi that's what this would be idk i couldn't think of a better example
+
+WAN - Wide Area Network (gojo level). the range is effectively infinite. an example is literally the entire internet
+
+Honerable mentions
+CAN - Campus Area Network (Town level or sum) the range is just like uni wifi or something
+
+You see the pattern? Lowk this shi not that important just slap any letter in front of Area Network and you get like a visual into how big of a network you're talkin about like I could say like some absolute random bullcrap like IAN Island Area Network and the only reason people will notice is cuz they'll think i'm releasing the files
 
 
 
