@@ -20,7 +20,7 @@ Ok so now power levels. So obviously you prolly heard of "LAN"
 if you're a seasoned veteran you'll recognize ts:
 
 ![Screenshot-2026-04-17-at-11.59.11-AM.png](images/Screenshot-2026-04-17-at-11.59.11-AM.png)
-shi brings a tear to my eyes i can't handle this nostalgia
+shi brings a tear to my eyes i can't handle this nostalgia 😢
 
 Anyhow LAN stands for "Local Area Network". 
 
@@ -37,6 +37,7 @@ but yeah that's what LAN is. The reason you gotta know that is cuz there's like 
 PAN - Personal Area Network (Human level in the wheel). Like bluetooth to ur airpods an shi
 
 LAN - we covered ts
+
 WLAN - we covered ts
 
 MAN - Metropolitan Area Network (City level). like imagine they give out free public wifi to like a whole city instead of just starbucks or mcdonalds or sum shi that's what this would be idk i couldn't think of a better example
@@ -50,10 +51,13 @@ You see the pattern? Lowk this shi not that important just slap any letter in fr
 
 Oh yeah btw irl as the area gets larger it gets slower and more expensive with the sole exception of satoru gojo of course
 
+---
 
-----------------------------------------------------------------
+Aight so now let's talk about the client-server model and the p2p model
 
-Aight so now let's talk about the client server model and the peer to peer model
+You probably already know what the client server model is basically all the heavy stuff runs on like the NVIDIA 9000 GPUs somewhere else while your computer just connects to it to feeds on that shi like a parasite
+
+oh yeah something interesting like chat gpt isn't running on ur computer cuz if it did ur computer would explode so like ur basically just sending ur prompts to chat gpt servers and then they run the model for you, adn then they give u the result for it. Anyhow 
 
 
 
