@@ -2,15 +2,11 @@
 
 cover:
 excerpt:
-tags:
+tags: course, BNFB series
 prerequisites:
 
-## Overview
+## Why give af?
 
-Write the first section here.
+it's like useful for machine learning and stuff and also kinda tuff if you really think about it
 
-## Key Ideas
-
-- Add the core concepts
-- Link to supporting material
-- Include diagrams or equations when useful
+## 
