@@ -26,7 +26,6 @@ Anyhow LAN stands for "Local Area Network".
 
 Ok so you know that one meme where some guy on a short is spinning like a wheel to determine some guy's power level like he got some guy in the comments like "i can solo jjk verse" or sum like ts:
 
-
 ![Screenshot-2026-04-17-at-12.02.41-PM.png](images/Screenshot-2026-04-17-at-12.02.41-PM.png)
 
 
