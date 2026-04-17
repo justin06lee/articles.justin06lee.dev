@@ -16,11 +16,18 @@ Ok so lets talk about networks first, and then power levels.
 basically a network is multiple computers that are capable of talking to each other. connections are either with wires and cables and shi or wireless with radio signals that mess with your nervous system
 
 Ok so now power levels. So obviously you prolly heard of "LAN"
-![Screenshot-2026-04-17-at-11.59.11-AM.png](images/Screenshot-2026-04-17-at-11.59.11-AM.p
+
+if you're a seasoned veteran you'll recognize ts:
+
+![Screenshot-2026-04-17-at-11.59.11-AM.png](images/Screenshot-2026-04-17-at-11.59.11-AM.png)
+shi brings a tear to my eyes i can't handle this nostalgia
+
+Anyhow LAN stands for "Local Area Network". 
+
+Ok so you know that one meme where some guy on a short is spinning like a wheel to determine some guy's power level like he got some guy in the comments like "i can solo jjk verse" or sum like ts:
 
 
-
-
+![Screenshot-2026-04-17-at-12.02.41-PM.png](images/Screenshot-2026-04-17-at-12.02.41-PM.png)
 
 
 
