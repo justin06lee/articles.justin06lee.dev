@@ -127,3 +127,27 @@ this, thinks that there's an 81% chance that we were in fact describing a cat.
 
 Here's the code you can play with for your very first, bare bones, fully manual neural network model: 
 
+
+```txt
+import math
+
+inputs = [0.9, 0.3, 0.7]
+# pointy ears, size of animal, fluff
+
+weights = [0.8, 0.1, 1.0]
+# pointy ears is important, size not so much, fluff very much so
+
+result = 0.0
+# init result var
+
+for i in range(len(inputs)):
+    result += inputs[i] * weights[i]
+    # add (0.9 * 0.8) + (0.3 * 0.1) + (0.7 * 1.0) to results
+
+sigma = (1/(1 + math.e ** (-1 * result)))
+# sigmafy results to become percentage
+
+print(sigma)
+# print sigmafied result
+
+```
