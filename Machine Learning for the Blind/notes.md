@@ -47,7 +47,7 @@ Now let's make some weights. A weight is just a number that indicates how releva
 ```txt
 float weight[3] = {0.8, 0.1, 1.0}
 
-// maybe pointy ears are important (weight[0])
+// pointy ears are important (weight[0])
 // whether it's a small animal or not isn't (weight[1])
 // and fluff is (OBVIOUSLY) very very important (weight[2])
 ```
@@ -56,18 +56,15 @@ float weight[3] = {0.8, 0.1, 1.0}
 
 So let's use this model now. The closer the result is to 1, the more confident the model is that what we're talking about is a cat. 
 
-
 ```txt
 Result = (0.9 * 0.8) + (0.3 * 0.1) + (0.7 * 1.0) = 1.45
 ```
-
 
 It doesn't have to be between 0 and 1 btw these are random values I made up and the result happens to be 1.45. But since this is hard to interpret (145% a cat???) we use something called a sigmoid function to squish the value to a percentage point (between 0 and 1). 
 
 This is how the sigmoid works: 
 
 ```txt
-
 // Big positive number -> close to 1
 // Big negative number -> close to 0
 // zero -> 0.5
