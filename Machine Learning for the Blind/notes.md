@@ -76,18 +76,54 @@ float sigmoid(float x) {
     return 1.0 / (1.0 + exp(-x));
 }
 ```
+oh heyul nah that looks scary
 
-
-and if we put 1.45 into the sigmoid function we get 0.81, or 81%. 
-
-That looks scary tho so let me put it into math format to make it easier to understand what the equation is: 
+let me put it into math format:
 
 $$
 \sigma(x) = \frac{1}{1+e^{-x}}
 $$
+
+(the lil symbol thing is sigma 🗿)
 
 this function, when graphed, looks like this: 
 
 ![drawing-2026-04-21T00-18-36-332Z.png](images/drawing-2026-04-21T00-18-36-332Z-light.png)
 
 Which means whatever x you input, it'll be between 0 and 1. Higher the x, closer f(x) is to 1. Lower the x into negative, the closer f(x) is to 0. 
+
+Anyway now if we put the number we got (1.45) into the sigmoid function we get:
+
+
+$$
+\sigma(1.45) = \frac{1}{1 + e^{-1.45}}
+$$
+
+$$
+\sigma(1.45)= \frac{1}{1+2.72^{-1.45}}
+$$
+
+$$
+\sigma(1.45)= \frac{1}{1.23}
+$$
+
+$$
+\sigma(1.45)= 0.81
+$$
+
+The numbers were rounded but you get the point. Kids' stuff. 
+
+Now our model, based on 
+
+```txt
+float input[3] = {0.9, 0.3, 0.7}
+```
+this and 
+
+```txt
+float weight[3] = {0.8, 0.1, 1.0}
+```
+this, thinks that there's an 81% chance that we were in fact describing a cat.
+
+Here's the code you can play with for your very first, bare bones, fully manual neural network model: 
+
