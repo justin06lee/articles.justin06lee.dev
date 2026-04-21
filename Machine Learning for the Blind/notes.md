@@ -21,13 +21,11 @@ What does this mean? Exactly what it means.
 
 literally
 
-
 ```txt
 float neuron = 0.5;
 ```
 
-
-. That's what those circles are. The same with the lines. They're literally randomly selected floating point numbers with a tiny little bit of added complexity.
+That's what those circles are. The same with the lines. They're literally randomly selected floating point numbers with a tiny little bit of added complexity.
 
 That's what gets you chat gpt and claude. Crazy stuff.
 
