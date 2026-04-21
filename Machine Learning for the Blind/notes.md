@@ -19,9 +19,13 @@ Is a LIE. All the circles are just straight up actual numbers, and the lines are
 
 What does this mean? Exactly what it means. 
 
-literal
+literally
 
+
+```txt
 float neuron = 0.5;
+```
+
 
 . That's what those circles are. The same with the lines. They're literally randomly selected floating point numbers with a tiny little bit of added complexity.
 
@@ -29,15 +33,16 @@ That's what gets you chat gpt and claude. Crazy stuff.
 
 Anyhow, let's "build" a "project". Let's say we wanna have a model that detects whether or not some image is that of a cat. we have multiple inputs / neurons. So instead of making more variables by hand, let's use an array: 
 
+```txt
 float input[3] = {0.9, 0.3, 0.7}
 // very pointy ears, smallish animal, fluff
+```
 
 That's it. The comments is what the inputs represent. Now we have 3 inputs. 
 
 By the way, the difference between a neuron and an input is that inputs are the starting point (no one computed the floating point numbers you just determined that it's 0.7 fluffy and 0.9 pointy eared). 
 
 Now let's make some weights. A weight is just a number that indicates how relevant each input is. 
-
 
 ```txt
 float weight[3] = {0.8, 0.1, 1.0}
