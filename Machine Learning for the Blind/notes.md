@@ -1,7 +1,8 @@
 # Machine Learning for the Blind
 
-cover:
-excerpt:
+cover:![meme.png](images/meme.png)
+
+excerpt: For those who know the neural network graph thing but don't ACTUALLY know what any of it means
 tags: Machine Learning, Beginner
 prerequisites:
 
