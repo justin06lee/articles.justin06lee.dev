@@ -128,7 +128,7 @@ this, thinks that there's an 81% chance that we were in fact describing a cat.
 Here's the code you can play with for your very first, bare bones, fully manual neural network model: 
 
 
-```txt
+```py
 import math
 
 inputs = [0.9, 0.3, 0.7]
