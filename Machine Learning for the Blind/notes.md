@@ -30,30 +30,41 @@ That's what those circles are. The same with the lines. They're literally random
 
 That's what gets you chat gpt and claude. Crazy stuff.
 
-Anyhow, let's "build" a "project". Let's say we wanna have a model that detects whether or not some image is that of a cat. we have multiple inputs / neurons. So instead of making more variables by hand, let's use an array: 
+Anyhow, let's "build" a "project". Let's say we wanna have a model that detects whether or not some image is that of a cat. we have multiple inputs. So instead of making more variables by hand, let's use an array: 
 
 ```txt
-float input[3] = {0.9, 0.3, 0.7}
+float inputs[3] = {0.9, 0.3, 0.7}
 // very pointy ears, smallish animal, fluff
 ```
 
 That's it. The comments is what the inputs represent. Now we have 3 inputs. 
 
-By the way, the difference between a neuron and an input is that inputs are the starting point (no one computed the floating point numbers you just determined that it's 0.7 fluffy and 0.9 pointy eared). 
+I'll explain the difference between inputs and neurons a little further down—don't worry about the difference just yet.
 
 Now let's make some weights. A weight is just a number that indicates how relevant each input is. 
 
 ```txt
 float weight[3] = {0.8, 0.1, 1.0}
 
-// pointy ears are important (weight[0])
-// whether it's a small animal or not isn't (weight[1])
-// and fluff is (OBVIOUSLY) very very important (weight[2])
+// pointy ears are important (weight[0] = 0.8)
+// there are big cats and small cats so this doesn't matter that much (weight[1] = 0.1)
+// and fluff is (OBVIOUSLY) very very important (weight[2] = 1.0)
 ```
 
 ![drawing-2026-04-20T23-47-20-548Z.png](images/drawing-2026-04-20T23-47-20-548Z-light.png)
 
-So let's use this model now. The closer the result is to 1, the more confident the model is that what we're talking about is a cat. 
+Ok. So what exactly did we just make?? Well, *technically* we didn't actually make neurons.
+
+```txt
+float inputs[3] = {0.9, 0.3, 0.7}
+float weight[3] = {0.8, 0.1, 1.0}
+```
+
+These three aren't *neurons*, they're *inputs*. It's just cuz we put the numbers (0.9, 0.3, 0.7) in there ourselves. It was never *computed* by anything else we just thought the ears were pointy and the cat, fluffy.
+
+So let's create our first neuron using these three inputs, and the three weights. 
+
+The closer the result is to 1, the more confident the model is that what we're talking about is a cat. 
 
 ```txt
 Result = (0.9 * 0.8) + (0.3 * 0.1) + (0.7 * 1.0) = 1.45
