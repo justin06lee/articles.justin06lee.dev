@@ -5,11 +5,6 @@ excerpt: Free will and Hard Determinism in Islam, and other Religions
 tags: Philosophy, Islam, Understanding Me
 prerequisites:
 
-## Things
-What is nothing, and what is everything? Let's imagine the vastness of these terms. Nothing is a difficult word to define. Let's say nothing is "something" with no properties. But if nothing has no properties, it has the property of having no properties. Nothing cannot be described, but even then nothing gains the property of being unable to be described. Nothing is nothing, no, not even, for that gains the property of being nothing. The most extreme definition of nothing is not a definition, and it isn't not a definition. Nothing is nothing, and nothing isn't nothing. It is also not anything in between. 
-
-Nothing does not occupy space, does not occupy time, does not occupy definition. 
-
 ## Energy and Time
 
 Let's say there exists nothing in the universe except a singular electron. 
