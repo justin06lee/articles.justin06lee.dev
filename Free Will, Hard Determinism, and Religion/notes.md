@@ -2,7 +2,7 @@
 
 cover: ![Screenshot-2026-05-02-at-8.39.28-PM.png](images/Screenshot-2026-05-02-at-8.39.28-PM.png)
 excerpt: Free will and Hard Determinism in Islam, and other Religions
-tags: philosophy, 
+tags: Philosophy, Islam, Me
 prerequisites:
 
 ## Overview
