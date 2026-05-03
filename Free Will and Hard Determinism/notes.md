@@ -1,11 +1,12 @@
-# Free Will and Hard Determinism
+# Free Will and Hard Determinism and Islam
 
-cover:
-excerpt:
+cover: ![Screenshot-2026-05-02-at-8.36.43-PM.png](images/Screenshot-2026-05-02-at-8.36.43-PM.png)
+excerpt: 
 tags:
 prerequisites:
 
 ## Overview
+
 
 Write the first section here.
 
