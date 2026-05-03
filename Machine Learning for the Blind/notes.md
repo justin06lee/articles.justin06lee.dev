@@ -37,7 +37,13 @@ float inputs[3] = {0.9, 0.3, 0.7}
 // very pointy ears, smallish animal, fluff
 ```
 
-That's it. The comments is what the inputs represent. Now we have 3 inputs. 
+That's it. The comments is what the inputs represent. On a scale from 0.0 to 1.0, how pointy are the ears? Take a look at this: 
+
+![drawing-2026-04-20T23-47-20-548Z.png](images/drawing-2026-04-20T23-47-20-548Z-light.png)
+
+Those are very pointy ears. In fact, I would say that they're about 9/10. But since we're talking about 0.0 to 1.0, I'll say 0.9/1.0. I'm assuming it's pretty small (0.3/1.0) and just cuz I drew it and i'm biased, it's 0.7/1.0 fluffy. idk how to draw fluff
+
+Anyhow, now we have 3 inputs. 
 
 I'll explain the difference between inputs and neurons a little further down—don't worry about the difference just yet.
 
@@ -51,20 +57,27 @@ float weight[3] = {0.8, 0.1, 1.0}
 // and fluff is (OBVIOUSLY) very very important (weight[2] = 1.0)
 ```
 
-![drawing-2026-04-20T23-47-20-548Z.png](images/drawing-2026-04-20T23-47-20-548Z-light.png)
-
 Ok. So what exactly did we just make?? Well, *technically* we didn't actually make neurons.
 
 ```txt
 float inputs[3] = {0.9, 0.3, 0.7}
-float weight[3] = {0.8, 0.1, 1.0}
 ```
 
 These three aren't *neurons*, they're *inputs*. It's just cuz we put the numbers (0.9, 0.3, 0.7) in there ourselves. It was never *computed* by anything else we just thought the ears were pointy and the cat, fluffy.
 
-So let's create our first neuron using these three inputs, and the three weights. 
+In order to *actually* create our first **neuron** we have to do some computations. Remember the weights? 
 
-The closer the result is to 1, the more confident the model is that what we're talking about is a cat. 
+```txt
+float weight[3] = {0.8, 0.1, 1.0}
+```
+
+We can use the inputs with the weights and make some calculation that means something: 
+
+If the cat's ears are this (0.9) pointy, and pointiness matters this (0.8) much, doesn't it kinda make sense if we just multiply these two numbers?
+
+And then we can do this for all the inputs and their corresponding weights. The cat is this (0.3) big, and size (of the cat) only matters this (0.1) much. The cat is this (0.7) fluffy, and fluffiness matters this(1.0) much. 
+
+Now we can add all the multiplied values together like this:
 
 ```txt
 Result = (0.9 * 0.8) + (0.3 * 0.1) + (0.7 * 1.0) = 1.45
