@@ -17,7 +17,7 @@ We're not actually talking about the algebra graphs this time. No coordinates or
 
 Looks big and complicated, but a graph is just dots and lines. That's it. You don't need a bigger understanding of graphs for this paper. 
 
-What's nice to know though, is a *directed graph*. Same thing as above, but imagine the lines are arrows instead. 
+What's nice to know though, is a **directed graph**. Same thing as above, but imagine the lines are arrows instead. 
 
 ![drawing-2026-05-22T05-48-42-056Z.png](images/drawing-2026-05-22T05-48-42-056Z-light.png)
 
@@ -25,3 +25,12 @@ This describes friendships for example-person A might think person B is a friend
 
 ## Zero Forcing
 
+Now, let's get to the rudimentary part of the paper. Zero Forcing. 
+
+You know Conway's Game of Life? Imagine that, but much simpler. 
+
+Imagine you pick some dots in a graph to be blue, and the other ones, white. Now, the blue dots can INFECT white dots to become blue, but only if a blue dot has ONLY ONE white dot as a neighbor. 
+
+![drawing-2026-05-22T05-57-06-719Z.png](images/drawing-2026-05-22T05-57-06-719Z-light.png)
+
+In this situation, in one **round**, 2 would become blue because 7's only white neighbor is 2. 
