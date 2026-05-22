@@ -23,7 +23,7 @@ What's nice to know though, is a **directed graph**. Same thing as above, but im
 
 This describes friendships for example-person A might think person B is a friend, but person B might think otherwise. In that scenario, A would point to B, but B wouldn't point to A. If they're both homies tho they'd have bidirectional arrows and point to each other. 
 
-## Zero Forcing
+## Zero Forcing (ZF)
 
 Now, let's get to the rudimentary part of the paper. Zero Forcing. 
 
@@ -69,7 +69,7 @@ The question is:
 
 > What's the smallest starting blue set that will eventually turn the whole graph blue?
 
-## Probabilistic Zero Forcing
+## Probabilistic Zero Forcing (PZF)
 
 Now this one is even more like a zombie apocalypse. 
 
@@ -90,3 +90,15 @@ But here's the actual math equation to calculate the chance of infection:
 So basically: 
 
 > \# of zombies around a zombie including itself ÷ total \# of zombified or non zombified humans around that zombie, including itself.
+
+## The actual paper (RZF)
+
+Now let's actually talk about Randomized Zero Forcing (RZF). Forget about the zombie analogy completely, because it doesn't really make sense here. Let's take PZF, and then change two things: 
+
+1. The graph is now directed. The lines between the dots are now arrows.
+2. In PZF, the blue dots try to INFECT white dots. That blue dot is the **actor**. In RZF, *white dots* decide whether to turn *themselves* blue or not, based on the incoming arrows. 
+
+Here's the official rule: 
+
+> A white dot turns blue with probability equal to the fraction of its in-neighbors that are blue.
+
