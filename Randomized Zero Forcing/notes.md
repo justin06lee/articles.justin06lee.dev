@@ -37,4 +37,4 @@ In this situation, in one **round**, 2 would become blue because 7's only white 
 
 ## Probabilistic Zero Forcing
 
-Now this one is even more like a zombie apocalypse. Imagine 
+Now this one is even more like a zombie apocalypse. Imagine the same game (Zero Forcing), but instead of this rule of a blue dot only needing one white dot neighbor, you implement a **probability** system, where there's a chance of any white dot becoming blue. 
