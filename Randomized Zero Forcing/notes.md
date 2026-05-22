@@ -108,3 +108,7 @@ Here's the official rule:
 
 > A white dot turns blue with probability equal to the fraction of its in-neighbors that are blue.
 
+So the actual math behind that is:
+
+> \# of blue in-neighbors ÷ total \# of all in-neighbors
+
