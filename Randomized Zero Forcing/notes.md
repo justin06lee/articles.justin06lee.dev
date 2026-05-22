@@ -29,7 +29,13 @@ Now, let's get to the rudimentary part of the paper. Zero Forcing.
 
 You know Conway's Game of Life? Imagine that, but much simpler. 
 
-Imagine you pick some dots in a graph to be blue, and the other ones, white. Now, the blue dots can INFECT white dots to become blue, but only if a blue dot has ONLY ONE white dot as a neighbor. 
+Imagine you pick some dots in a graph to be blue, and the other ones, white. 
+
+Now, the blue dots can INFECT white dots to become blue, but only if a blue dot has ONLY ONE white dot as a neighbor. 
+
+The official rule is: 
+
+> If a blue dot has exactly one white neighbor, that white neighbor turns blue.
 
 ![drawing-2026-05-22T05-57-06-719Z.png](images/drawing-2026-05-22T05-57-06-719Z-light.png)
 
