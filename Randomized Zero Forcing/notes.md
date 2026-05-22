@@ -83,6 +83,10 @@ But here's the catch. For every blue dot around a blue dot, that blue dot's chan
 
 Notice how in both pictures, the blue dots and white dots still have to be connected with each other? Just a quick reminder, cuz it's important that even if there's more zombies or more humans, if they don't coordinate together well, the chance of infecting / not being infected becomes lower. 
 
+This is an important little nitpick here: 
+
+The **CHANCE** for each individual white dot to become infected. 
+
 But here's the actual math equation to calculate the chance of infection: 
 
 > \# of blue neighbors including itself ÷ total \# of neighbors of the blue dot, including itself.
