@@ -55,4 +55,4 @@ But here's the actual math equation to calculate the chance of infection:
 
 So basically: 
 
-\# of zombies around a zombie ÷ total \# of zombified or normal humans around that zombie.
+\# of zombies around a zombie including itself ÷ total \# of zombified or normal humans around that zombie, including itself.
