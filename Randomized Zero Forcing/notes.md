@@ -85,8 +85,8 @@ Notice how in both pictures, the blue dots and white dots still have to be conne
 
 But here's the actual math equation to calculate the chance of infection: 
 
-\# of blue neighbors including itself ÷ total \# of neighbors of the blue dot, including itself.
+> \# of blue neighbors including itself ÷ total \# of neighbors of the blue dot, including itself.
 
 So basically: 
 
-\# of zombies around a zombie including itself ÷ total \# of zombified or non zombified humans around that zombie, including itself.
+> \# of zombies around a zombie including itself ÷ total \# of zombified or non zombified humans around that zombie, including itself.
