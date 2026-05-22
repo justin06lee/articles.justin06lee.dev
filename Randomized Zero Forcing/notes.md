@@ -1,8 +1,8 @@
 # Understanding Papers: Randomized Zero Forcing
 
-cover:
-excerpt:
-tags:
+cover: ![chicken.gif](images/chicken.gif)
+excerpt: Understanding the paper "Randomized Zero Forcing", by Jesse Geneson, Illya Hicks, Noah Lichtenberg, Alvin Moon, and Nicolas Robles.
+tags: Understanding Papers, Discrete Mathematics
 prerequisites:
 
 ## Introduction
@@ -34,3 +34,7 @@ Imagine you pick some dots in a graph to be blue, and the other ones, white. Now
 ![drawing-2026-05-22T05-57-06-719Z.png](images/drawing-2026-05-22T05-57-06-719Z-light.png)
 
 In this situation, in one **round**, 2 would become blue because 7's only white neighbor is 2. Nothing else would become blue, because 6 has 4 white neighbors (including 2) and 8 has 2 white neighbors. Since 7 only has 1 white neighbor, that white neighbor becomes blue. Like a zombie apocalypse where the zombies gang up on humans only if they have only one human to focus on. Otherwise they get distracted and don't bite anyone. A zombie who chases more than 1 human catches none. 
+
+## Probabilistic Zero Forcing
+
+Now this one is even more like a zombie apocalypse. Imagine 
