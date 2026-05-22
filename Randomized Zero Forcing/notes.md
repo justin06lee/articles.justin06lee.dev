@@ -85,7 +85,9 @@ Notice how in both pictures, the blue dots and white dots still have to be conne
 
 This is an important little nitpick here: 
 
-The **CHANCE** for each individual white dot to become infected. 
+The **CHANCE** for each individual white dot to become infected is the same. The dice roll is different for each individual white. 
+
+If the chance of infection is 50%, and the blue dot wins that gamble, only one white dot is becoming blue, and then that blue dot has to win the gamble with the next white dot, then the next, etc. It's not an airborn super zombie that turns 5 white dots into blue instantly because he won **one** gamble. Make sense? 
 
 But here's the actual math equation to calculate the chance of infection: 
 
