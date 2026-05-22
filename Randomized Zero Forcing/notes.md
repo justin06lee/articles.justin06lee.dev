@@ -37,4 +37,14 @@ In this situation, in one **round**, 2 would become blue because 7's only white 
 
 ## Probabilistic Zero Forcing
 
-Now this one is even more like a zombie apocalypse. Imagine the same game (Zero Forcing), but instead of this rule of a blue dot only needing one white dot neighbor, you implement a **probability** system, where there's a chance of any white dot becoming blue. 
+Now this one is even more like a zombie apocalypse. 
+
+Imagine the same game (Zero Forcing), but instead of this rule of a blue dot only needing one white dot neighbor, you implement a **probability** system, where there's a chance of any white dot becoming blue.
+
+But here's the catch. For every blue dot around a blue dot, that blue dot's chance of infecting white dots around it increases. 
+
+![drawing-2026-05-22T06-12-09-807Z.png](images/drawing-2026-05-22T06-12-09-807Z-light.png)
+
+![drawing-2026-05-22T06-17-30-869Z.png](images/drawing-2026-05-22T06-17-30-869Z-light.png)
+
+Notice how in both pictures, the blue dots and white dots still have to be connected with each other? Just a quick reminder, cuz it's important that even if there's more zombies or more humans, if they don't coordinate together well, the chance of infecting / not being infected becomes lower. 
