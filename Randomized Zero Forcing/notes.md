@@ -97,6 +97,18 @@ So basically:
 
 > \# of zombies around a zombie including itself ÷ total \# of zombified or non zombified humans around that zombie, including itself.
 
+There's also another fact. As long as there is at least ONE blue dot, the chance of infection will NEVER be zero. 
+
+Since the equation includes itself, if a blue dot has a million white neighbors and no blue neighbors, the chance of infection will be 1/1,000,000 and thus, after a million rounds, or a billion, there'll probably be at least one infection, and over enough time EVERY dot will become blue. 
+
+For PZF, it is GUARENTEED that all dots WILL become blue. The question then becomes:
+
+> How **long** will it take for **all** dots to **inevitably** become blue, and what's the **minimum** number of starting blue dots that produces the **shortest** time of infection, and in what configuration?
+
+Which is in intuitive sense:
+
+> What's the best bang-for-your-buck?
+
 ## The actual paper (RZF)
 
 Now let's actually talk about Randomized Zero Forcing (RZF). Forget about the zombie analogy completely, because it doesn't really make sense here. Let's take PZF, and then change two things: 
