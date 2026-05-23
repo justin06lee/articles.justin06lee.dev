@@ -112,3 +112,4 @@ So the actual math behind that is:
 
 > \# of blue in-neighbors ÷ total \# of all in-neighbors
 
+That's it. That's the whole thing. 
