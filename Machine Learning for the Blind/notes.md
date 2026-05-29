@@ -96,7 +96,7 @@ float sigmoid(float x) {
     return 1.0 / (1.0 + exp(-x));
 }
 ```
-oh nah that looks scary
+but that looks kinda scary so
 
 let me put it into math format:
 
