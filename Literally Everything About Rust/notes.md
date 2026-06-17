@@ -1,16 +1,12 @@
 # Literally Everything About Rust
 
-cover:
-excerpt:
-tags:
+cover: ![Dkmhr4.gif](images/Dkmhr4.gif)
+excerpt: Every single unnecessary detail about rust to become a master rustacean.
+tags: Literally Everything, Rust
 prerequisites:
 
-## Overview
+## Introduction
 
-Write the first section here.
+This is literally everything about the rust programming language. Read this article, end to end, if you want to become a master rustacean.
 
-## Key Ideas
-
-- Add the core concepts
-- Link to supporting material
-- Include diagrams or equations when useful
+## 
