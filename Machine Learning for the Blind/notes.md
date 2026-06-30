@@ -171,3 +171,52 @@ print(sigma)
 # print sigmafied result
 
 ```
+
+But something is off... Imagine all the inputs are 0. The ears are not pointy at all, it has 0 size(..?) and it isn't fluffy at all. What would our model think? Let's do the math. 
+
+$$
+(0*0.8)+(0*0.1)+(0*1.0)=0
+$$
+
+$$
+\sigma(0) = \frac{1}{1+e^{-0}}
+$$
+
+$$
+\sigma(0) = \frac{1}{1+1}
+$$
+
+$$
+\sigma(0) = \frac{1}{2}=0.5
+$$
+
+...huh??
+
+When our inputs were all 0's, our model predicts that it's has a 50% chance of it being a cat. That's not right. If it has fully rounded ears, is infinitely small and is not fluffy at all, how could it possibly be a cat?? This means if I literally described a picture of a brick wall and gave our model the inputs, it would predict that it's 50% cat. 
+
+Well, it can't be **that** bad. Let's give it the **most *cat* cat** we could possibly find: maximum ear-pointiness, maximum size, and maximum fluffiness. Let's do the math. 
+
+$$
+(1.0*0.8)+(1.0*0.1)+(1.0*1.0)=1.9
+$$
+
+$$
+\sigma(1.9) = \frac{1}{1+e^{-1.9}}
+$$
+
+$$
+\sigma(0) = \frac{1}{1+0.15}
+$$
+
+$$
+\sigma(0) = \frac{1}{1.15}=0.87
+$$
+
+...wait what???
+
+The maximum probability of something being a cat, according to our model, is 87%. The minimum is 50%. 
+
+It seems for any set of inputs, the absolute minimum is 50%, and the absolute maximum is 87%. 
+
+That's not good. In short, our model kinda **sucks**. It's super inaccurate. I guess I mentioned we're gonna make a model, but never really specified that it would be any **good**. 
+
