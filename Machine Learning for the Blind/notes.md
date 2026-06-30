@@ -220,3 +220,4 @@ It seems for any set of inputs, the absolute minimum is 50%, and the absolute ma
 
 That's not good. In short, our model kinda **sucks**. It's super inaccurate. I guess I mentioned we're gonna make a model, but never really specified that it would be any **good**. 
 
+Let's try to duct tape a solution this problem. 
