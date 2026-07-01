@@ -26,7 +26,7 @@ literally
 float neuron = 0.5;
 ```
 
-That's what those circles are. The same with the lines. They're literally randomly selected floating point numbers with a tiny little bit of added complexity.
+That's what those circles are. The same with the lines. They're literally randomly selected floating point numbers (that changes to be meaningful over time) with a tiny little bit of added complexity.
 
 That's what gets you chat gpt and claude. Crazy stuff.
 
@@ -50,7 +50,7 @@ I'll explain the difference between inputs and neurons a little further down—d
 Now let's make some weights. A weight is just a number that indicates how relevant each input is. 
 
 ```txt
-float weight[3] = {0.8, 0.1, 1.0}
+float weights[3] = {0.8, 0.1, 1.0}
 
 // pointy ears are important (weight[0] = 0.8)
 // there are big cats and small cats so this doesn't matter that much (weight[1] = 0.1)
@@ -63,12 +63,12 @@ Ok. So what exactly did we just make?? Well, *technically* we didn't actually ma
 float inputs[3] = {0.9, 0.3, 0.7}
 ```
 
-These three aren't *neurons*, they're *inputs*. It's just cuz we put the numbers (0.9, 0.3, 0.7) in there ourselves. It was never *computed* by anything else we just thought the ears were pointy and the cat, fluffy.
+These three aren't *neurons*, they're *inputs*. It's just cuz we put the numbers (0.9, 0.3, 0.7) in there ourselves. It was never *computed* by anything else before that, we just thought the ears were pointy and the cat, fluffy.
 
 In order to *actually* create our first **neuron** we have to do some computations. Remember the weights? 
 
 ```txt
-float weight[3] = {0.8, 0.1, 1.0}
+float weights[3] = {0.8, 0.1, 1.0}
 ```
 
 We can use the inputs with the weights and make some calculation that means something: 
@@ -114,7 +114,6 @@ Which means whatever x you input, it'll be between 0 and 1. Higher the x, closer
 
 Anyway now if we put the number we got (1.45) into the sigmoid function we get:
 
-
 $$
 \sigma(1.45) = \frac{1}{1 + e^{-1.45}}
 $$
@@ -136,17 +135,20 @@ The numbers were rounded but you get the point. Kids' stuff.
 Now our model, based on 
 
 ```txt
-float input[3] = {0.9, 0.3, 0.7}
+float inputs[3] = {0.9, 0.3, 0.7}
 ```
 this and 
 
 ```txt
-float weight[3] = {0.8, 0.1, 1.0}
+float weights[3] = {0.8, 0.1, 1.0}
 ```
 this, thinks that there's an 81% chance that we were in fact describing a cat.
 
-Here's the code you can play with for your very first, bare bones, fully manual neural network model: 
+Well, it's not actually a percentage. It's like a 0-1 confidence-ish value. But we're just gonna pretend it's a percentage for the rest of this section to make it more intuitive.
 
+Congratulations! You've just done **forward pass** on a neural "network" model (it's not actually a network since we have like one neuron, but still)
+
+Here's the code you can play with for your very first, bare bones, fully manual neural "network" model: 
 
 ```py
 import math
@@ -406,3 +408,4 @@ $$
 Wait what?? When all the inputs were 0.35, there was a 62.5% chance that this thing was a cat. When we get a thing that's slightly less a cat, 0.25, the probability that it's a cat becomes 8%. That is also a problem. And it's a problem that we can't solve with duct tape anymore. This is the reason it's called machine **learning** - we can no longer keep shifting values until something works. And we can't keep hand-picking inputs and biases randomly either. That leads us to our next section:
 
 ## Training Arc
+
