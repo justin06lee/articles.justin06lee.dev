@@ -323,10 +323,10 @@ Nice! Now the super cat is 99.999...% cat, and the brick wall is 0.00005% cat! W
 ```py
 import math
 
-inputs = [0.9, 0.3, 0.7]
+inputs = [0.35, 0.35, 0.35]
 # pointy ears, size of animal, fluff
 
-weights = [0.8, 0.1, 1.0]
+weights = [10, 10, 10]
 # pointy ears is important, size not so much, fluff very much so
 
 # >>>>>>>>>>>>>>>>>>>> FIRST LINE ADDED HERE >>>>>>>>>>>>>>>>>>>>
@@ -339,7 +339,7 @@ result = 0.0
 
 for i in range(len(inputs)):
     result += inputs[i] * weights[i]
-    # add (0.9 * 0.8) + (0.3 * 0.1) + (0.7 * 1.0) to results
+    # add (0.35 * 10) + (0.35 * 10) + (0.35 * 10) to results
 
 # >>>>>>>>>>>>>>>>>>>> SECOND LINE ADDED HERE >>>>>>>>>>>>>>>>>>>>
 result += bias
