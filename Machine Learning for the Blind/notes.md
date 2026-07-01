@@ -316,7 +316,44 @@ $$
 \sigma(20) = \frac{1}{1.000000002}=0.9999...
 $$
 
-Nice! Now the super cat is 99.999...% cat, and the brick wall is 0.00005% cat! What we just added is a **bias**. In a normal, many neurons example(this whole cat detector thing is like a single neuron and like 3 input values), every neuron would have their own bias that changes based on it's training. We'll talk about it later. Anyhow, That's perfect. That's exactly what we want!
+Nice! Now the super cat is 99.999...% cat, and the brick wall is 0.00005% cat! What we just added is a **bias**. In a normal, many neurons example(this whole cat detector thing is like a single neuron and like 3 input values), every neuron would have their own bias that changes based on it's training. We'll talk about it later. This adds literally two lines to our intial code:
+
+```py
+import math
+
+inputs = [0.9, 0.3, 0.7]
+# pointy ears, size of animal, fluff
+
+weights = [0.8, 0.1, 1.0]
+# pointy ears is important, size not so much, fluff very much so
+
+# >>>>>>>>>>>>>>>>>>>> FIRST LINE ADDED HERE >>>>>>>>>>>>>>>>>>>>
+bias = -10
+# This is initializing what our bias is.
+# >>>>>>>>>>>>>>>>>>>> FIRST LINE ENDS HERE >>>>>>>>>>>>>>>>>>>>>
+
+result = 0.0
+# init result var
+
+for i in range(len(inputs)):
+    result += inputs[i] * weights[i]
+    # add (0.9 * 0.8) + (0.3 * 0.1) + (0.7 * 1.0) to results
+
+# >>>>>>>>>>>>>>>>>>>> SECOND LINE ADDED HERE >>>>>>>>>>>>>>>>>>>>
+result += bias
+# Add the bias to our resulting value
+# >>>>>>>>>>>>>>>>>>>> SECOND LINE ENDS HERE >>>>>>>>>>>>>>>>>>>>>
+
+sigma = (1/(1 + math.e ** (-1 * result)))
+# sigmafy results to become percentage
+
+print(sigma)
+# print sigmafied result
+
+```
+
+
+Anyhow, That's perfect. That's exactly what we want!
 
 ...right?
 
