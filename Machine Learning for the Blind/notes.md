@@ -316,7 +316,7 @@ $$
 \sigma(20) = \frac{1}{1.000000002}=0.9999...
 $$
 
-Nice! Now the super cat is 99.999...% cat, and the brick wall is 0.00005% cat! That's perfect. That's exactly what we want! 
+Nice! Now the super cat is 99.999...% cat, and the brick wall is 0.00005% cat! What we just added is a **bias**. In a normal, many neurons example(this whole cat detector thing is like a single neuron and like 3 input values), every neuron would have their own bias that changes based on it's training. We'll talk about it later. Anyhow, That's perfect. That's exactly what we want!
 
 ...right?
 
@@ -366,4 +366,4 @@ $$
 \sigma(5) = \frac{1}{13.2}=0.08
 $$
 
-Wait what?? When all the inputs were 0.35, there was a 62.5% chance that this thing was a cat. When we get a thing that's slightly less a cat, 0.25, the probability that it's a cat becomes 8%. That is also a problem. And it's a problem that we can't solve with duct tape anymore. 
+Wait what?? When all the inputs were 0.35, there was a 62.5% chance that this thing was a cat. When we get a thing that's slightly less a cat, 0.25, the probability that it's a cat becomes 8%. That is also a problem. And it's a problem that we can't solve with duct tape anymore. This is the reason it's called machine **learning** - we can no longer keep shifting values until something works. And we can't keep hand-picking inputs randomly either. 
