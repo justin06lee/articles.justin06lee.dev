@@ -320,7 +320,7 @@ Nice! Now the super cat is 99.999...% cat, and the brick wall is 0.00005% cat! W
 
 ...right?
 
-Well, let's test it a little. We'll do like 0.35 for each input case.
+Well, we don't actually know, so let's test it a little. We'll do like 0.35 for each input case.
 
 $$
 (0.35*10)+(0.35*10)+(0.35*10)=10.5
