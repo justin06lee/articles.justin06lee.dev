@@ -172,7 +172,13 @@ print(sigma)
 
 ```
 
-But something is off... Imagine all the inputs are 0. The ears are not pointy at all, it has 0 size(..?) and it isn't fluffy at all. What would our model think? Let's do the math. 
+But something is off... Imagine all the inputs are 0. The ears are not pointy at all, it has 0 size(..?) and it isn't fluffy at all. 
+
+![drawing-2026-07-01T00-11-02-748Z.png](images/drawing-2026-07-01T00-11-02-748Z-light.png)
+
+(this is our reference image. It's a brick wall. very not cat.)
+
+What would our model think? Let's do the math. 
 
 $$
 (0*0.8)+(0*0.1)+(0*1.0)=0
@@ -220,4 +226,144 @@ It seems for any set of inputs, the absolute minimum is 50%, and the absolute ma
 
 That's not good. In short, our model kinda **sucks**. It's super inaccurate. I guess I mentioned we're gonna make a model, but never really specified that it would be any **good**. 
 
-Let's try to duct tape a solution this problem. 
+Let's try to duct tape a solution this problem.
+
+Let's first try to account for the worst case brick-wall scenario. 
+
+If all the inputs are 0, we want the result to be (at least close to) 0%. Let's just, from the result of the sum, subtract like 10. So then we get:
+
+$$
+(0*0.8)+(0*0.1)+(0*1.0)=0
+$$
+
+$$
+0 - 10 = -10
+$$
+
+$$
+\sigma(-10) = \frac{1}{1+e^{-(-10)}}
+$$
+
+$$
+\sigma(-10) = \frac{1}{1+22026}
+$$
+
+$$
+\sigma(-10) = \frac{1}{22027}=0.00005
+$$
+
+Nice! 0.00005 is basically 0. So now, when all the inputs are 0, our model knows that it's almost 0% a cat!
+
+...But what happens to the other side? What if we get the **most *cat* cat**? Then in this sequence:
+
+$$
+(1.0*0.8)+(1.0*0.1)+(1.0*1.0)=1.9
+$$
+
+we now subtract 10 like we did before, which becomes
+
+$$
+\sigma(1.9 - 10) = \sigma(-8.1)
+$$
+
+$$
+\sigma(-8.1) = \frac{1}{1+e^{-(-8.1)}}
+$$
+
+$$
+\sigma(-8.1) = \frac{1}{1+3294}
+$$
+
+$$
+\sigma(-8.1) = \frac{1}{3295}=0.0003
+$$
+
+...whoops. Now the **most *cat* cat** has a 0% chance of being a cat. That doesn't make sense. 
+
+So to prevent this let's add some more duct tape. 
+
+Let's just CRANK UP the weights so that the -10 just doesn't effect the final result. All this time, we've been multiplying 0 and 1 by the weights, which were 0.8, 0.1 and 1.0. Let's just crank all of em to 10 and see what happens. We'll try both the brick wall and the super cat.
+
+$$
+(0.0*10)+(0.0*10)+(0.0*10)=0
+$$
+
+Well, for the brick wall it doesn't change since it's all 0's. That's a feature. We want that to stay 0 so that the previous math of the brick wall is still 0%. 
+
+Let's try the super cat.
+
+$$
+(1.0*10)+(1.0*10)+(1.0*10)=30
+$$
+
+and we subtract 10:
+
+$$
+30-10=20
+$$
+
+let's continue:
+
+$$
+\sigma(20) = \frac{1}{1+e^{-20}}
+$$
+
+$$
+\sigma(20) = \frac{1}{1+0.000000002}
+$$
+
+$$
+\sigma(20) = \frac{1}{1.000000002}=0.9999...
+$$
+
+Nice! Now the super cat is 99.999...% cat, and the brick wall is 0.00005% cat! That's perfect. That's exactly what we want! 
+
+...right?
+
+Well, let's test it a little. We'll do like 0.35 for each input case.
+
+$$
+(0.35*10)+(0.35*10)+(0.35*10)=10.5
+$$
+
+$$
+10.5-10=0.5
+$$
+
+$$
+\sigma(5) = \frac{1}{1+e^{-0.5}}
+$$
+
+$$
+\sigma(5) = \frac{1}{1+0.6}
+$$
+
+$$
+\sigma(5) = \frac{1}{1.6}=0.625
+$$
+
+Ok, not bad, not good, idk. 
+
+Well, let's try on a 0.25 case. 0.35 was a weird number. 
+
+$$
+(0.25*10)+(0.25*10)+(0.25*10)=7.5
+$$
+
+$$
+7.5 - 10 = -2.5
+$$
+
+$$
+\sigma(-2.5) = \frac{1}{1+e^{-(-2.5)}}
+$$
+
+$$
+\sigma(5) = \frac{1}{1+12.2}
+$$
+
+$$
+\sigma(5) = \frac{1}{13.2}=0.08
+$$
+
+Wait what?? When all the inputs were 0.35, there was a 62.5% chance that this thing was a cat. When we get a thing that's slightly less a cat, 0.25, the probability that it's a cat becomes 8%. That is also a problem. And it's a problem that we can't solve with duct tape anymore. 
