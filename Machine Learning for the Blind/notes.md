@@ -423,6 +423,18 @@ this is **100%** a cat, and thus the label should be 1.0 in our example. And IF 
 
 In short, our label is the objective answer to a question, and the loss is how wrong our model was in its guess. 
 
+```
+label = 1.0
+model_prediction = 0.42
+loss = label - model_prediction
+
+print(loss)
+# 0.58
+```
+
+Yes, I know this cat example is getting boring... but hang on for a second-in my research I found a perfect excuse to move on, but only after this one small idea you gotta understand.
+
+
 
 
 
