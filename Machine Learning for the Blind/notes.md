@@ -422,7 +422,7 @@ But how do we actually train the model? How do we know how to tweak what values 
 
 ![drawing-2026-04-20T23-47-20-548Z.png](images/drawing-2026-04-20T23-47-20-548Z-light.png)
 
-this is **100%** a cat, and thus the label should be 1.0 in our example. And IF our **current** model were to predict that this is 42% likely to be a cat, it would be 58% **wrong**. That is our **loss**. 
+this is **100%** a cat, and thus the label should be 1.0 in our example. And IF our **current** model were to predict that this is 42% likely to be a cat, it would be 58% **wrong**. That is our **loss**. The lower the loss the better-since 0% **wrong** would be 100% **right**.
 
 In short, our label is the objective answer to a question, and the loss is how wrong our model was in its guess. 
 
@@ -489,3 +489,10 @@ $$
 loss = -0.1991
 $$
 
+Wait a minute. The loss is **negative**. Then since the loss is -19.91%, are we 119.91% correct?? 
+
+(no)
+
+we need a way to interpret this negative number. Your immediate instinct might be to just take the absolute value of this number and move on. Which is a great instinct! That was my instinct, actually, which is why I said it was great. 
+
+But apparently not. 
