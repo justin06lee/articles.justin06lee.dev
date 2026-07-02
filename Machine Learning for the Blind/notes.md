@@ -178,7 +178,7 @@ But something is off... Imagine all the inputs are 0. The ears are not pointy at
 
 ![drawing-2026-07-01T00-11-02-748Z.png](images/drawing-2026-07-01T00-11-02-748Z-light.png)
 
-(this is our reference image. It's a brick wall. very not cat.)
+(this is our reference image. It's a brick wall. not very "cat")
 
 What would our model think? Let's do the math. 
 
@@ -204,6 +204,9 @@ When our inputs were all 0's, our model predicts that it's has a 50% chance of i
 
 Well, it can't be **that** bad. Let's give it the **most *cat* cat** we could possibly find: maximum ear-pointiness, maximum size, and maximum fluffiness. Let's do the math. 
 
+![sigmacat_meme.png](images/sigmacat_meme.png)
+(the most cat cat)
+
 $$
 (1.0*0.8)+(1.0*0.1)+(1.0*1.0)=1.9
 $$
@@ -220,7 +223,7 @@ $$
 \sigma(0) = \frac{1}{1.15}=0.87
 $$
 
-...wait what???
+...wait what??? that can't be right. That's the most **cat** looking **cat** if **i've** ever seen one.
 
 The maximum probability of something being a cat, according to our model, is 87%. The minimum is 50%. 
 
@@ -370,15 +373,15 @@ $$
 $$
 
 $$
-\sigma(5) = \frac{1}{1+e^{-0.5}}
+\sigma(0.5) = \frac{1}{1+e^{-0.5}}
 $$
 
 $$
-\sigma(5) = \frac{1}{1+0.6}
+\sigma(0.5) = \frac{1}{1+0.6}
 $$
 
 $$
-\sigma(5) = \frac{1}{1.6}=0.625
+\sigma(0.5) = \frac{1}{1.6}=0.625
 $$
 
 Ok, not bad, not good, idk. 
@@ -398,11 +401,11 @@ $$
 $$
 
 $$
-\sigma(5) = \frac{1}{1+12.2}
+\sigma(-2.5) = \frac{1}{1+12.2}
 $$
 
 $$
-\sigma(5) = \frac{1}{13.2}=0.08
+\sigma(-2.5) = \frac{1}{13.2}=0.08
 $$
 
 Wait what?? When all the inputs were 0.35, there was a 62.5% chance that this thing was a cat. When we get a thing that's slightly less a cat, 0.25, the probability that it's a cat becomes 8%. That is also a problem. And it's a problem that we can't solve with duct tape anymore. This is the reason it's called machine **learning** - we can no longer keep shifting values until something works. And we can't keep hand-picking inputs and biases randomly either. That leads us to our next section:
@@ -432,9 +435,57 @@ print(loss)
 # 0.58
 ```
 
-Yes, I know this cat example is getting boring... but hang on for a second-in my research I found a perfect excuse to move on, but only after this one small idea you gotta understand.
+Yes, I know this cat example is getting boring... but hang on for a second-in my research I found a perfect excuse to move on to a different joke, but only after this one small idea you gotta understand.
 
+![chud_cat.jpg](images/chud_cat.jpg)
 
+Take this picture. We'll label it like 80% cat (the other 20% is cheetos)
 
+```
+label = 0.80
+```
 
+And then let's compute it using our model we made before. This will be the cranked up version.
+
+```
+inputs = [0.2, 1.0, 0.5]
+# it's ears are like 20% pointy, it's 100% big, and it's 50% fluffy.
+
+weights = [10, 10, 10]
+# the cranked up weights
+```
+
+Ok. Now let's run it. 
+
+$$
+(0.2*10)+(1.0*10)+(0.5*10)=17
+$$
+
+$$
+17-10=7
+$$
+
+$$
+\sigma(7) = \frac{1}{1+e^{-7}}
+$$
+
+$$
+\sigma(7) = \frac{1}{1+0.0009}
+$$
+
+$$
+\sigma(7) = \frac{1}{1.0009}=0.9991
+$$
+
+Well, I guess it did a pretty decent job. But we wanted 80%, not 99.91%! It forgot to account for the 20% cheetos.
+
+Let's check the **loss**. 
+
+$$
+loss = 0.80 - 0.9991
+$$
+
+$$
+loss = -0.1991
+$$
 
