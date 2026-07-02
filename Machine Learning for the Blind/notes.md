@@ -409,3 +409,20 @@ Wait what?? When all the inputs were 0.35, there was a 62.5% chance that this th
 
 ## Training Arc
 
+Now, we have to actually **train** the model. Right now all we've been doing is hand-picking some random numbers and doing some math to get some result-we've been learning about **forward pass**. 
+
+But now, we need more neurons, and more ways to properly **calibrate** these numbers into something meaningful so that we can make them as accurate as possible. 
+
+But how do we actually train the model? How do we know how to tweak what values to what, by how much, and why? To know this we first have to understand the idea of a **label**, and also **loss**. These are very simple ideas. 
+
+**label** is the correct answer. 
+
+![drawing-2026-04-20T23-47-20-548Z.png](images/drawing-2026-04-20T23-47-20-548Z-light.png)
+
+this is **100%** a cat, and thus the label should be 1.0 in our example. And IF our **current** model were to predict that this is 42% likely to be a cat, it would be 58% **wrong**. That is our **loss**. 
+
+In short, our label is the objective answer to a question, and the loss is how wrong our model was in its guess. 
+
+
+
+
