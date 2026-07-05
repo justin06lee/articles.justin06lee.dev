@@ -611,4 +611,5 @@ $$
 
 We wanted 0.80. So our loss went down. 
 
-Bro I am ***NOT*** doing allat for every weight and like increasing and decreasing the nudge value and shi 💀
+Bro I am ***NOT*** doing allat for every weight and like increasing and decreasing the nudge value and shi 💀🥀🪦💔
+
