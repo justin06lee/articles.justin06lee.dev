@@ -496,3 +496,40 @@ Wait a minute. The loss is **negative**. Then since the loss is -19.91%, are we 
 we need a way to interpret this negative number. Your immediate instinct might be to just take the absolute value of this number and move on. Which is a great instinct! That was my instinct, actually, which is why I said it was great. 
 
 But apparently not. 
+
+This is something I'll teach you in more detail a little later, but what you need to know is that we tend to **square** the loss, not only to get rid of the negative but to **emphasize** the bigger issues. 
+
+For example, if our loss is 0.9, and we square it, it becomes **0.81**. If our loss is 0.1, and we square it, it becomes **0.01**. 
+
+See the difference? The bigger losses get shrunk down **less**, and we can tend to the bigger issues which are a lot more "visible" compared to the others. 
+
+You don't really need to understand how everything works right now-just understand the vibe of what's going on. Since bigger numbers stay bigger, they're emphasized as bigger problems. Since smaller problems become even smaller, we can ignore them for now and tend to the bigger ones. ("problems" in this context is just referencing **loss**). 
+
+So let's square it.
+
+$$
+loss = (-0.1991)^2
+$$
+
+$$
+loss = 0.04
+$$
+
+Not the biggest problem it seems, but it's the only one we have right now, so let's try fix it. How? 
+
+First, let's try the duct tape method. 
+
+Let's have a "nudge" value: 
+
+```
+nudge = 0.1
+```
+
+And then let's just either add or subtract it from our weights! 
+
+Let's do the first one. 
+
+```
+weights = [10.1, 10, 10]
+```
+
