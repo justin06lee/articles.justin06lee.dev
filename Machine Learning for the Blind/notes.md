@@ -527,9 +527,88 @@ nudge = 0.1
 
 And then let's just either add or subtract it from our weights! 
 
-Let's do the first one. 
+Let's do the second one, since that one has the highest input. 
 
 ```
-weights = [10.1, 10, 10]
+weights = [10, 10.1, 10]
 ```
 
+$$
+(0.2*10)+(1.0*10.1)+(0.5*10)=17.1
+$$
+
+$$
+17.02-10=7.1
+$$
+
+$$
+\sigma(7.1) = \frac{1}{1+e^{-7.1}}
+$$
+
+$$
+\sigma(7.1) = \frac{1}{1+0.0008}
+$$
+
+$$
+\sigma(7.1) = \frac{1}{1.0008}=0.9992
+$$
+
+Whoops! We accidently seem to have made loss a TINY bit **bigger**. 
+
+This was the previous number for comparison: 
+
+$$
+0.9991
+$$
+
+And this is the new number:
+
+$$
+0.9992
+$$
+
+What we wanted was 0.80. 
+
+Our loss went up by a fraction of a decimal. 
+
+So instead of nudging it up into 10.1, let's nudge it downwards, to get 9.9. 
+
+$$
+(0.2*10)+(1.0*9.9)+(0.5*10)=16.9
+$$
+
+$$
+16.9-10=6.9
+$$
+
+$$
+\sigma(6.9) = \frac{1}{1+e^{-6.9}}
+$$
+
+$$
+\sigma(6.9) = \frac{1}{1+0.001}
+$$
+
+$$
+\sigma(6.9) = \frac{1}{1.001}=0.9990
+$$
+
+WOW! YOU SEE THAT?!
+
+Our loss went down. By a fraction of a decimal. 
+
+Here's the previous number for comparison. 
+
+$$
+0.9991
+$$
+
+Here's the new number: 
+
+$$
+0.9990
+$$
+
+We wanted 0.80. So our loss went down. 
+
+Bro I am ***NOT*** doing allat for every weight and like increasing and decreasing the nudge value and shi 💀
