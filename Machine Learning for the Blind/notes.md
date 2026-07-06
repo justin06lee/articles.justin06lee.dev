@@ -569,7 +569,7 @@ $$
 
 What we wanted was 0.80. 
 
-Our loss went up by a fraction of a decimal. 
+Our loss went **up** by a fraction of a decimal. 
 
 So instead of nudging it up into 10.1, let's nudge it downwards, to get 9.9. 
 
@@ -595,7 +595,7 @@ $$
 
 WOW! YOU SEE THAT?!
 
-Our loss went down. By a fraction of a decimal. 
+Our loss went **down**. By a fraction of a decimal. 
 
 Here's the previous number for comparison. 
 
