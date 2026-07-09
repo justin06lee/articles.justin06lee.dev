@@ -613,3 +613,15 @@ We wanted 0.80. So our loss went down.
 
 Bro I am ***NOT*** doing allat for every weight and like increasing and decreasing the nudge value and shi 💀🥀🪦💔
 
+In fact, it's slow for *us*, and it's even slow for ***computers***. Computers are working on literally hundreds of **billions** to **trillions** of weights and biases. They are **NOT** going to sit there manually testing and calculating the numbers for every individual neuron, like we did above. 
+
+Because imagine we have a neuron where the input is the output of another neuron. We would literally have to **re-calculate** every single neuron's value and see the final result and see if our loss went down. Even with computers, that's impossible at the scale humanity has achieved thus far. 
+
+So what do we do to make this drastically faster? Well, we use all mighty **calculus**. 
+
+![digust.jpg](images/digust.jpg)
+
+Yeah ik I hate calculus too. But it's necessary. When you asked the school teacher when you'd ever use this stuff, this is an example of when. 
+
+## Gradients
+
