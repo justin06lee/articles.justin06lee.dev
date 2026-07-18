@@ -625,3 +625,14 @@ Yeah ik I hate calculus too. But it's necessary. When you asked the school teach
 
 ## Gradients
 
+Since I hate calculus, let's not even talk about it for now. Let's talk about some other problems so we can productively procrastinate on calculus. 
+
+Let's forget the calculations we did above and focus only on the results for a second. Our loss went down by 0.0001. Now, just based on this number, forgetting about the fact that we manually tested this with values we know, can you tell me if that difference is actually a **lot** or a **little**? So can you tell me like if that's a big change to our loss or a small change to our loss? 
+
+It's like this: if I say I pushed my car and it moved 3 feet, I have no way to tell how **strong** you are. If you full body slammed the car and it moved 3 feet, you're probably normal. If you flicked it with your pinky and it moved 3 feet, you might be the hulk. 
+
+In that same way, if you just give me the change in loss: 0.0001, I have no way of knowing the nudge value that was used for that value, and thus how effective our change actually was. 
+
+If our nudge value was like 3000 and our change in loss was 0.0001, that weight would be a super numb one and changing the it doesn't impact the loss very much. 
+
+If our nudge was like 0.00000000000000001 and our change in loss was 0.0001, that would be a SUPER sensitive weight and changing it, even slightly, would impact the loss drastically. 
