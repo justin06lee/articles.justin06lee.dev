@@ -636,3 +636,8 @@ In that same way, if you just give me the change in loss: 0.0001, I have no way 
 If our nudge value was like 3000 and our change in loss was 0.0001, that weight would be a super numb one and changing the it doesn't impact the loss very much. 
 
 If our nudge was like 0.00000000000000001 and our change in loss was 0.0001, that would be a SUPER sensitive weight and changing it, even slightly, would impact the loss drastically. 
+
+Well, let's revisit the original problem that we had with this new small piece of knowledge. How do we find the optimal change to our weight? We want to reduce loss as much as possible.
+
+Well, your first instinct may be to graph it. It wasn't my first instinct so don't be surprised, but if it was i mean ur smarter than me already. 
+
