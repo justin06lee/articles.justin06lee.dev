@@ -641,3 +641,15 @@ Well, let's revisit the original problem that we had with this new small piece o
 
 Well, your first instinct may be to graph it. It wasn't my first instinct so don't be surprised, but if it was i mean ur smarter than me already. 
 
+If we can find like a math function for the relationship between how much you nudge the value and how much the loss goes up or down, we can try to graph that function and try find the nudge to maximize the amount that the loss goes down. Capiche? 
+
+So let's think about this. Well, how do we graph things again???
+
+Well, I remember *linear* graphs, it's
+
+$$$
+y = mx + b
+$$$
+
+. Well, we're trying to graph something here, so let's try to find the slope...
+
