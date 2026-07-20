@@ -655,13 +655,13 @@ $$$
 
 The slope would represent the sensitivity-how much the loss changes based on what nudge value. You remember this slope finding equation?
 
-$$$
-m = \frac{x_2 - x_1}{y_2 - y_1}
-$$$
+$$
+m = \frac{y_2 - y_1}{x_2 - x_1}
+$$
 
 So let's try to fill it out, but with english. 
 
-$$$
+$$
 m = \frac{difference\ in\ loss}{difference\ in\ nudge\ value}
-$$$
+$$
 
