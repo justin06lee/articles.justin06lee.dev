@@ -635,11 +635,11 @@ In that same way, if you just give me the change in loss: 0.0001, I have no way 
 
 If our nudge value was like 3000 and our change in loss was 0.0001, that weight would be a super numb one and nudging it wouldn't impact the loss very much. 
 
-If our nudge value was like 0.00000000000000001 and our change in loss was 0.0001, that would be a SUPER sensitive weight and nudging it, even slightly, would impact the loss drastically. 
+If our nudge value was like 0.000000000001 and our change in loss was 0.0001, that would be a SUPER sensitive weight and nudging it, even slightly, would impact the loss drastically. 
 
-Well, let's revisit the original problem that we had with this new small piece of knowledge. How do we find the optimal change to our weight? We want to reduce loss as much as possible.
+Well, let's revisit the original problem that we had, now that we have this new small piece of knowledge. How do we find the optimal change to our weight? We want to reduce loss as much as possible.
 
-Well, your first instinct may be to graph it. It wasn't my first instinct so don't be surprised, but if it was i mean ur smarter than me already. 
+Well, your first instinct may be to graph it. It wasn't my first instinct so don't be surprised.
 
 If we can find like a math function for the relationship between how much you nudge the value and how much the loss goes up or down, we can try to graph that function and try find the nudge to maximize the amount that the loss goes down. Capiche? 
 
@@ -653,4 +653,8 @@ $$$
 
 . Well, we're trying to graph something here, so let's try to find the slope. Well, what would the slope actually represent in this situation? 
 
-The slope would represent how much the 
+The slope would represent the sensitivity-how much the loss changes based on what nudge value. You remember this slope finding equation?
+
+$$
+m = \frac{x_2 - x_1}{y_2 - y_1}
+$$
