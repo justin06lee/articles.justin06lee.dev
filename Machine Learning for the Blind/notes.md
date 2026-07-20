@@ -651,5 +651,6 @@ $$$
 y = mx + b
 $$$
 
-. Well, we're trying to graph something here, so let's try to find the slope...
+. Well, we're trying to graph something here, so let's try to find the slope. Well, what would the slope actually represent in this situation? 
 
+The slope would represent how much the 
