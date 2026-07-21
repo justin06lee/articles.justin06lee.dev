@@ -665,5 +665,7 @@ $$
 m = \frac{difference\ in\ loss}{difference\ in\ nudge\ value}
 $$
 
-This looks pretty complicated. It's not intuitive, at least not to me. So let me try to explain what all this is doing with a little more clarity.
+This looks pretty complicated. It's not intuitive, at least not to me as i'm writing this. So let me try to explain what all this is doing with a little more clarity.
+
+
 
