@@ -1,4 +1,5 @@
 # How Net Works
+hidden: true
 
 cover:
 excerpt:
