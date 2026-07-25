@@ -1,4 +1,5 @@
 # The Hardware of Networks
+hidden: true
 
 cover:
 excerpt:
